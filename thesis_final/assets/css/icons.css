@@ -1,0 +1,353 @@
+/**
+ * Complete Modern Icon System CSS
+ * Professional vector icons with your color scheme
+ */
+
+/* Icon SVG Base Styles */
+.icon-svg {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.icon-svg svg {
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
+}
+
+/* Icon Size Variants */
+.icon-lg {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-xl {
+    width: 56px;
+    height: 56px;
+}
+
+/* Sidebar Icons */
+.sidebar-nav .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.75rem;
+}
+
+.sidebar-nav .icon .icon-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar-nav .icon .icon-svg svg {
+    stroke: currentColor;
+}
+
+.sidebar-header h2 .icon-svg {
+    width: 28px;
+    height: 28px;
+    margin-right: 0.5rem;
+}
+
+.sidebar-header h2 .icon-svg svg {
+    stroke: #D4AF37;
+}
+
+/* Stat Card Icons */
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stat-icon .icon-svg {
+    width: 32px;
+    height: 32px;
+}
+
+.stat-icon .icon-svg svg {
+    stroke: white;
+    stroke-width: 2.5;
+}
+
+.stat-icon.primary {
+    background: linear-gradient(135deg, #DC143C 0%, #B01030 100%);
+}
+
+.stat-icon.success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.stat-icon.warning {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8941E 100%);
+}
+
+.stat-icon.danger {
+    background: linear-gradient(135deg, #DC143C 0%, #A01028 100%);
+}
+
+.stat-icon.secondary {
+    background: linear-gradient(135deg, #353535 0%, #1a1a1a 100%);
+}
+
+/* Button Icons */
+button .icon-svg,
+.btn .icon-svg,
+.btn-icon .icon-svg,
+a.btn .icon-svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+}
+
+.btn-icon .icon-svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+}
+
+/* Card Header Icons */
+.card-header h3 .icon-svg,
+.form-card-header h3 .icon-svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.card-header h3 .icon-svg svg {
+    stroke: #DC143C;
+}
+
+/* Empty State Icons */
+.empty-state .icon {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.empty-state .icon .icon-svg {
+    width: 64px;
+    height: 64px;
+}
+
+.empty-state .icon .icon-svg svg {
+    stroke: #BBAFAF;
+    stroke-width: 1.5;
+}
+
+/* Notification Icon */
+.notification-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-icon .icon-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.notification-icon .icon-svg svg {
+    stroke: #353535;
+}
+
+.notification-icon:hover .icon-svg svg {
+    stroke: #DC143C;
+}
+
+/* Menu Toggle Icon */
+.menu-toggle .icon-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-toggle .icon-svg svg {
+    stroke: #353535;
+}
+
+/* Badge Icons */
+.badge .icon-svg {
+    width: 14px;
+    height: 14px;
+    margin-right: 0.25rem;
+}
+
+/* Action Button Icons */
+.btn-icon.btn-view .icon-svg svg {
+    stroke: #10b981;
+}
+
+.btn-icon.btn-edit .icon-svg svg {
+    stroke: #D4AF37;
+}
+
+.btn-icon.btn-delete .icon-svg svg {
+    stroke: #DC143C;
+}
+
+.btn-icon:hover .icon-svg svg {
+    stroke-width: 2.5;
+}
+
+/* Primary Button Icons */
+.btn-primary .icon-svg svg {
+    stroke: white;
+}
+
+.btn-secondary .icon-svg svg {
+    stroke: #DC143C;
+}
+
+/* Table Cell Icons */
+td .icon-svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Filter Group Icons */
+.filter-group .icon-svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+/* Alert Icons */
+.alert .icon-svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.alert-error .icon-svg svg {
+    stroke: #DC143C;
+}
+
+.alert-success .icon-svg svg {
+    stroke: #10b981;
+}
+
+.alert-warning .icon-svg svg {
+    stroke: #D4AF37;
+}
+
+/* Responsive Icon Sizes */
+@media (max-width: 768px) {
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .stat-icon .icon-svg {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .empty-state .icon .icon-svg {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* Icon Animation on Hover */
+.btn:hover .icon-svg,
+.btn-icon:hover .icon-svg,
+.sidebar-nav a:hover .icon .icon-svg {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* Notification Dropdown Icons */
+.notification-dropdown .icon-svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Topbar Icons */
+.topbar .icon-svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* User Avatar Fallback */
+.user-avatar {
+    background: linear-gradient(135deg, #DC143C, #B01030);
+}
+
+/* Link Icons */
+a .icon-svg {
+    vertical-align: middle;
+}
+
+/* Form Label Icons */
+label .icon-svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.25rem;
+}
+
+/* Search Form Icons */
+.search-form button .icon-svg {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+/* Stats Grid Enhancement */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Icon Color Classes */
+.icon-primary .icon-svg svg {
+    stroke: #DC143C;
+}
+
+.icon-success .icon-svg svg {
+    stroke: #10b981;
+}
+
+.icon-warning .icon-svg svg {
+    stroke: #D4AF37;
+}
+
+.icon-danger .icon-svg svg {
+    stroke: #DC143C;
+}
+
+.icon-secondary .icon-svg svg {
+    stroke: #353535;
+}
+
+.icon-white .icon-svg svg {
+    stroke: white;
+}
+
+/* Smooth Transitions */
+.icon-svg svg {
+    transition: all 0.2s ease;
+}
+
+/* Icon in Links */
+.sidebar-footer a .icon-svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+.sidebar-footer a:hover .icon-svg svg {
+    stroke: #DC143C;
+}

@@ -1,0 +1,176 @@
+/**
+ * Global Stylesheet - UPDATED
+ * Modern design with your color scheme
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #DC143C;
+    --primary-hover: #B01030;
+    --secondary-color: #353535;
+    --accent-gold: #D4AF37;
+    --bg-ivory: #FFFFF0;
+    --silver-gray: #BBAFAF;
+    --success-color: #10b981;
+    --error-color: #DC143C;
+    --warning-color: #D4AF37;
+    --bg-color: #F5F5F5; /* Light gray background */
+    --card-bg: #FFFFFF;
+    --text-primary: #353535;
+    --text-secondary: #6b6b6b;
+    --border-color: #e0e0e0;
+    --shadow: 0 2px 8px rgba(53, 53, 53, 0.1);
+    --shadow-lg: 0 8px 24px rgba(53, 53, 53, 0.15);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color); /* Light gray */
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-gold); /* Gold hover */
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-gold); /* Gold hover */
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent-gold); /* Gold hover */
+    color: white;
+    border-color: var(--accent-gold);
+    text-decoration: none;
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Form inputs and selects - Gold border on focus */
+input:focus, 
+textarea:focus, 
+select:focus {
+    outline: none;
+    border-color: var(--accent-gold) !important;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1) !important;
+}
+
+/* Links hover gold */
+button:hover,
+.btn-icon:hover {
+    color: var(--accent-gold);
+}
+
+/* Sidebar links hover */
+.sidebar-nav a:hover {
+    background-color: rgba(212, 175, 55, 0.2);
+    color: var(--accent-gold);
+}
+
+.sidebar-nav a.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-left: 4px solid var(--accent-gold); /* Gold accent */
+}
+
+/* Alerts */
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.alert-error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border-left: 4px solid var(--error-color);
+}
+
+.alert-success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border-left: 4px solid var(--success-color);
+}
+
+.alert-warning {
+    background-color: #fef3c7;
+    color: #92400e;
+    border-left: 4px solid var(--warning-color);
+}
+
+.alert ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.alert li {
+    margin-bottom: 0.25rem;
+}
+
+/* Form Footer */
+.form-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.form-footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+    }
+}
